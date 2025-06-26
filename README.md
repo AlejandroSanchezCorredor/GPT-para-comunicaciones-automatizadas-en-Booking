@@ -32,7 +32,7 @@ La gestión manual de las comunicaciones en Booking puede ser ineficiente y prop
 
 ---
 
-### 🛠Tecnologías Usadas
+### Tecnologías Usadas
 
 * **Lenguaje y Frameworks**: Python, Node.js, Serverless Framework
 * **Machine Learning**: GPT-3 y GPT-4 (OpenAI API)
@@ -67,7 +67,7 @@ El sistema se despliega sobre una infraestructura completamente **serverless**:
 
 * **Scraping de Booking**: Automatización para recolectar datos simulados de propiedades, reservas, etc.
 * **Módulo GPT**: Manejo de prompts y respuestas personalizadas con GPT-4.
-* ⚙**API Serverless**: Conexión entre el frontend, el backend y los modelos.
+* **API Serverless**: Conexión entre el frontend, el backend y los modelos.
 * **Base de datos NoSQL (DynamoDB)**: Estructura para almacenar información de usuarios, reservas y propiedades.
 * **Frontend de prueba**: Interfaz para simular conversaciones y ver el modelo en acción.
 
@@ -89,10 +89,8 @@ Cada prueba fue evaluada por claridad, coherencia y relevancia del modelo.
 ### Resultados
 
 * Se alcanzó una calidad conversacional alta en las respuestas del modelo GPT.
-* Automatización efectiva de más del **90% de las consultas simuladas**.
 * Infraestructura serverless desplegada correctamente en entorno AWS.
-* Reducción estimada de tiempo de gestión en un **70%** para escenarios con múltiples propiedades.
-
+  
 ---
 
 ### Conclusiones y Futuras Mejoras
@@ -101,7 +99,7 @@ Cada prueba fue evaluada por claridad, coherencia y relevancia del modelo.
 * La arquitectura serverless permite escalar fácilmente sin costes fijos elevados.
 * Próximas mejoras:
 
-  * Integración con la API oficial de Booking (si es accesible)
+  * Integración con la API oficial de Booking (si es accesible en el futuro)
   * Añadir procesamiento multilenguaje real
   * Panel de control para propietarios
 
