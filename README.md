@@ -1,10 +1,10 @@
-## 🧠 GPT para Comunicaciones Automatizadas en Booking
+## GPT para Comunicaciones Automatizadas en Booking
 
 Este proyecto consiste en el desarrollo de un sistema inteligente que automatiza las respuestas a clientes en plataformas como Booking.com utilizando modelos de lenguaje como **GPT-3** y **GPT-4**, con una arquitectura escalable y moderna basada en servicios serverless de **AWS**.
 
 ---
 
-### 📌 Tabla de Contenidos
+### Tabla de Contenidos
 
 * [Motivación](#motivación)
 * [Objetivos](#objetivos)
@@ -17,13 +17,13 @@ Este proyecto consiste en el desarrollo de un sistema inteligente que automatiza
 
 ---
 
-### 🎯 Motivación
+### Motivación
 
 La gestión manual de las comunicaciones en Booking puede ser ineficiente y propensa a errores, especialmente para propietarios con muchas propiedades. Este proyecto busca **automatizar las respuestas a los clientes**, utilizando procesamiento de lenguaje natural para mejorar la experiencia del usuario y ahorrar tiempo a los propietarios.
 
 ---
 
-### ✅ Objetivos
+### Objetivos
 
 * Automatizar las respuestas a consultas frecuentes de clientes en Booking.
 * Integrar modelos GPT para generar respuestas coherentes y personalizadas.
@@ -32,7 +32,7 @@ La gestión manual de las comunicaciones en Booking puede ser ineficiente y prop
 
 ---
 
-### 🛠️ Tecnologías Usadas
+### 🛠Tecnologías Usadas
 
 * **Lenguaje y Frameworks**: Python, Node.js, Serverless Framework
 * **Machine Learning**: GPT-3 y GPT-4 (OpenAI API)
@@ -49,7 +49,7 @@ La gestión manual de las comunicaciones en Booking puede ser ineficiente y prop
 
 ---
 
-### 🧱 Arquitectura
+### Arquitectura
 
 El sistema se despliega sobre una infraestructura completamente **serverless**:
 
@@ -59,21 +59,21 @@ El sistema se despliega sobre una infraestructura completamente **serverless**:
 * La API de OpenAI se consulta para generar las respuestas inteligentes.
 * Interfaz simulada para representar el flujo conversacional con clientes.
 
-*(Incluye aquí un diagrama si tienes uno, o enlázalo como imagen)*
+![image](https://github.com/user-attachments/assets/98b447aa-3088-47f7-baeb-a88c48b92ef0)
 
 ---
 
-### 🧩 Componentes del Proyecto
+### Componentes del Proyecto
 
-* 🔍 **Scraping de Booking**: Automatización para recolectar datos simulados de propiedades, reservas, etc.
-* 🧠 **Módulo GPT**: Manejo de prompts y respuestas personalizadas con GPT-4.
-* ⚙️ **API Serverless**: Conexión entre el frontend, el backend y los modelos.
-* 📦 **Base de datos NoSQL (DynamoDB)**: Estructura para almacenar información de usuarios, reservas y propiedades.
-* 🌐 **Frontend de prueba**: Interfaz para simular conversaciones y ver el modelo en acción.
+* **Scraping de Booking**: Automatización para recolectar datos simulados de propiedades, reservas, etc.
+* **Módulo GPT**: Manejo de prompts y respuestas personalizadas con GPT-4.
+* ⚙**API Serverless**: Conexión entre el frontend, el backend y los modelos.
+* **Base de datos NoSQL (DynamoDB)**: Estructura para almacenar información de usuarios, reservas y propiedades.
+* **Frontend de prueba**: Interfaz para simular conversaciones y ver el modelo en acción.
 
 ---
 
-### 🧪 Pruebas Realizadas
+### Pruebas Realizadas
 
 Se realizaron múltiples pruebas con distintos enfoques de prompt y escenarios:
 
@@ -86,7 +86,7 @@ Cada prueba fue evaluada por claridad, coherencia y relevancia del modelo.
 
 ---
 
-### 📈 Resultados
+### Resultados
 
 * Se alcanzó una calidad conversacional alta en las respuestas del modelo GPT.
 * Automatización efectiva de más del **90% de las consultas simuladas**.
@@ -95,7 +95,7 @@ Cada prueba fue evaluada por claridad, coherencia y relevancia del modelo.
 
 ---
 
-### 📌 Conclusiones y Futuras Mejoras
+### Conclusiones y Futuras Mejoras
 
 * Se comprobó que los modelos GPT son muy útiles en la automatización de atención al cliente.
 * La arquitectura serverless permite escalar fácilmente sin costes fijos elevados.
@@ -107,7 +107,7 @@ Cada prueba fue evaluada por claridad, coherencia y relevancia del modelo.
 
 ---
 
-### 📎 Requisitos para Ejecutar
+### Requisitos para Ejecutar
 
 ```bash
 npm install
@@ -118,7 +118,7 @@ Configura tus credenciales AWS y claves de la API de OpenAI en `.env`.
 
 ---
 
-### 📂 Estructura del Repositorio
+### Estructura del Repositorio
 
 ```bash
 📦 booking-gpt-bot
@@ -131,7 +131,3 @@ Configura tus credenciales AWS y claves de la API de OpenAI en `.env`.
 ├── .env
 └── README.md
 ```
-
----
-
-¿Quieres que te genere este README directamente como archivo descargable o que lo suba a un proyecto base si me das tu repo?
