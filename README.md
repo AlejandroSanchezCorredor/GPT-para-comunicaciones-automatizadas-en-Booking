@@ -119,13 +119,51 @@ Configura tus credenciales AWS y claves de la API de OpenAI en `.env`.
 ### Estructura del Repositorio
 
 ```bash
-📦 booking-gpt-bot
-├── src/
-│   ├── scraping/
-│   ├── api/
-│   ├── prompts/
-│   └── model/
-├── serverless.yml
-├── .env
-└── README.md
+GPT-para-comunicaciones-automatizadas-en-Booking/
+├── application/                # Backend principal: lógica de negocio, controladores y servicios
+│   ├── controllers/            # Encapsula la lógica de rutas (endpoints)
+│   ├── core/                   # Configuraciones centrales de la app
+│   ├── functions/              # Funciones principales, incluidas las llamadas a GPT
+│   ├── models/                 # Modelos de datos (ORM o estructuras para DynamoDB)
+│   ├── services/               # Servicios auxiliares (p. ej., conexión con OpenAI, email, etc.)
+│   └── configuration.py        # Parámetros de configuración general de la aplicación
+│   └── handler.py              # Entrada principal del backend (Lambda handler)
+│   └── __init__.py             # Inicialización del módulo Python
+│
+├── frontend/                  # Interfaz de usuario (Angular)
+│   ├── src/                    # Código fuente de la aplicación frontend
+│   ├── public/                 # Recursos estáticos
+│   └── README.md               # Instrucciones del frontend
+│
+├── serverless_resources/       # Definición de recursos en AWS vía archivos YAML
+│   ├── aws_s3.yml              # Configuración del bucket S3
+│   ├── aws_cognito.yml         # Gestión de autenticación
+│   ├── dynamodb.yml            # Definición de tablas NoSQL
+│   ├── aws_route53.yml         # DNS para la app
+│   ├── aws_acm_certificates.yml# Certificados SSL
+│   ├── aws_cloudfront.yml      # Distribución CDN de CloudFront
+│   └── app_security.yml        # Políticas y seguridad
+│
+├── Dockerfile.api              # Contenedor para el backend
+├── Dockerfile.scheduler        # Contenedor para tareas programadas
+├── Dockerfile.test             # Contenedor para pruebas del modelo GPT
+│
+├── serverless.yml              # Archivo principal para despliegue con Serverless Framework
+├── requirements.txt            # Dependencias de Python para el backend
+├── package.json                # Dependencias del frontend
+├── README.md                   # Documentación general del proyecto
+
 ```
+---
+
+### Descripción de Carpetas
+
+* **`application/`**: Contiene toda la lógica del backend, incluida la interacción con OpenAI, manejo de datos y configuración del entorno.
+* **`frontend/`**: Proyecto Angular que permite simular la experiencia de un usuario en Booking conversando con un chatbot basado en GPT.
+* **`serverless_resources/`**: Infraestructura como código (IaC), donde se definen recursos específicos de AWS como S3, DynamoDB, Cognito, etc., para un despliegue automatizado.
+* **`Dockerfile.*`**: Imágenes personalizadas para cada parte del sistema. Esto permite entornos aislados para pruebas, API y procesos programados.
+* **`serverless.yml`**: Define funciones Lambda, eventos, permisos y recursos para desplegar tu arquitectura sin servidor usando el Serverless Framework.
+
+---
+
+
